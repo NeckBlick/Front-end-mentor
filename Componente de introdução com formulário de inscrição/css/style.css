@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --Red--primary: hsl(0, 100%, 74%) ;
+    --Green--primary: hsl(154, 59%, 51%);
+    --dark--Green--primary: hsl(154, 55%, 36%);
+    --Dark-Blue--neutral: hsl(249, 10%, 26%); 
+    --Grayish-Blue--neutral: hsl(246, 25%, 77%);
+    --Blue--ascend: hsl(248, 32%, 49%);
+}
+body{
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color: var(--Red--primary);
+    background-repeat: no-repeat;
+}
+.content-principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.content-left{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 15px;
+}
+.content-title{
+    width: 512px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.content-paragrafo{
+    width: 512px;
+    text-align: justify;
+}
+.content-right{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+button{
+    width: 537px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: var(--Blue--ascend);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.197);
+    cursor: pointer;
+}
+button b{
+    font-weight: 600;
+}
+#form{
+    background-color: #fff;
+    width: 537px;
+    height: 473px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.197);
+}
+form div{
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    border: 1px solid var(--Grayish-Blue--neutral); 
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+form input:focus{
+    border-color: var(--Blue--ascend);
+}
+form button{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--Green--primary);
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow:0px 4px 3px var(--dark--Green--primary);
+}
+form p{
+    font-size: 12px;
+    color: var(--Grayish-Blue--neutral);
+}
+form a{
+    color: var(--Red--primary);
+    text-decoration: none;
+}
+#sumir{
+    display: none;
+    align-items: flex-end;
+    font-weight:700;
+    color: var(--Red--primary);
+    font-size: 12px;
+}
+#sumir2{
+    display: none;
+    align-items: flex-end;
+    font-weight:700;
+    color: var(--Red--primary);
+    font-size: 12px;
+}
+#sumirE{
+    display: none;
+    align-items: flex-end;
+    font-weight:700;
+    color: var(--Red--primary);
+    font-size: 12px;
+}
+#sumirS{
+    display: none;
+    align-items: flex-end;
+    font-weight:700;
+    color: var(--Red--primary);
+    font-size: 12px;
+}
+.errorInput{
+    border: 3px solid var(--Red--primary) ;
+}
